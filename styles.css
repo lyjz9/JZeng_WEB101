@@ -1,0 +1,163 @@
+/* Add CSS styles for your web site here and use them in index.html. */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  line-height: 1.4;
+}
+
+html {
+  background: url('download.jfif') no-repeat center center fixed; /* Match your image’s dominant color */
+}
+
+
+body {
+    background: url('download.jfif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    width:fit-content;
+  }
+
+ li {
+    padding-left: 5px; 
+    list-style-position: inside; 
+  }
+
+.signupbtn{
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #192676;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.navbar {
+    padding: 15px;
+    margin-bottom: 20px;
+    z-index: 1000; 
+}
+
+.navbar ul {
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    background: #a5d4e1; 
+    list-style: none; 
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0; 
+    margin: 0;
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.navbar ul li {
+    float: left;
+    margin: 10px;
+
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: azure;
+    text-align: left;
+    padding: 0px;
+}
+
+.navbar ul li a:hover {
+    color:bisque ;
+}
+
+h1 {
+      padding-top: 10px;
+      font-size: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 10px;
+      flex-direction: column;
+    }
+
+
+.rsvp-container {
+  display: flex;
+  flex-direction:row;
+  gap: 20px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.rsvp-para {
+  width: 55%;
+  padding-right: 10px;
+  
+}
+
+.rsvp-particpants{
+  width: 45%;
+  padding-right: 10px;
+}
+
+input {
+  display: flex;
+  flex-direction: row;
+  display: block;
+  margin: 5px 0;
+}
+
+.form-container {
+  display: flex;          /* Makes children (labels & inputs) inline */
+  align-items: center;   /* Vertically centers them */
+  gap: 10px;             /* Adds spacing between items */
+}
+
+#rsvp-form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#rsvp-form label {
+  white-space: nowrap;  /* Prevents "Name:" from breaking into 2 lines */
+  font-weight: bold;
+}
+#rsvp-form input {
+  padding: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100px;         /* Adjust width as needed */
+}
+
+#rsvp-button {
+  font-weight: bold;
+  padding: 4px 20px;
+  background-color: #192676;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;  /* Prevents button text from wrapping */
+  transition: background-color 0.3s;
+}
+
+#rsvp-button:hover {
+  background-color:rgb(71, 205, 231);
+}
+
+.event-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  background: white;
+}

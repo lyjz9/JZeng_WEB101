@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<htm</section>l>
+<head>
+    <title>Project 1</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <img src="hollytree (1).png" alt="Logo" style="height: 40px;">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>   
+    </div>
+
+    <section id="home">
+        <h1 style="display: flex; flex-direction: column; align-items: center; gap: 10px; margin: 10px; font-size: 40px;">
+            Holly Hotel
+            <img src="hotelentry.jpg" style="max-width: 500px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+        </h1>
+        <h3 style="margin-left: 5px;">About Our Event</h3>
+        <p style="margin-left: 5px;">
+            Centered in the heart of Cloral city and surrounded by tourist attractions, 
+            Holly Hotel specializes in creating unforgettable experiences for your special occasions.
+            Our venue is perfect for:
+        </p>
+        <ul style="margin-left: 15px">
+            <li>Weddings</li>
+            <li>Company conferences and meetings</li>
+            <li>Family reunions and celebrations</li>
+            <li>Social gatherings</li>
+        </ul>
+        <button class="signupbtn">Sign Up Now</button>
+    </section>
+
+    <section id="events">
+        <div style="padding: 20px;"></div>
+            <h1 style="display: flex; align-items: center; gap: 10px; margin: 10; font-size: 40px;">
+                Our Events
+            </h1>
+            <input type="text" placeholder="Search events..." 
+                style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ebe9e9;">
+
+            <div style="display: flex; flex-wrap: wrap; margin-bottom: 30px; border: 1px solid #eee; padding: 15px;">
+                <img src="wedding.jpg" alt="Wedding" 
+                    style="width: 100%; max-width: 400px; height: 150px; object-fit: cover; margin-right: 20px;">
+                <div>
+                    <h3 style="margin-top: 0; color: black;">Wedding</h3>
+                    <p><b>Location:</b> Holly Ballroom</p>
+                    <p>Perfect for your special day with memories and catering</p>
+                    <button style="background: #192676; color: white; border: none; padding: 8px 15px;">Book</button>
+                </div>
+            </div>
+
+            <div style="display: flex; flex-wrap: wrap; margin-bottom: 30px; border: 1px solid #eee; padding: 15px;">
+                <img src="conference.jpg" alt="Conference" 
+                    style="max-width: 400px; width: 100%; height: 150px; object-fit: cover; margin-right: 20px;">
+                <div>
+                    <h3 style="margin-top: 0; color: black;">Business Conference</h3>
+                    <p><b>Max capacity:</b>100</p>
+                    <p>Professional meeting space with best technology setup </p>
+                    <button style="background: #192676; color: white; border: none; padding: 8px 15px;">Book</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="rsvp">
+        <h2 style="margin: 5px;">RSVP</h2>
+        <div class="rsvp-container">
+            <div class="rsvp-para">
+                Come join our meeting on what we will be doing.
+            </div>
+            <div class="rsvp-participants">
+                <p>🎟️ DJ from Texas has RSVP'd.</p>
+                <p>🎟️ Amy from New York has RSVP'd.</p>
+                <p>🎟️ Teresa from Montana has RSVP'd.</p>
+            </div>
+        </div>
+        <div class="form-container">
+            <form id="rsvp-form">
+                <label for="name">Name:</label>
+                <input type="text">
+                <label for="state">State:</label>
+                <input type="text">
+                <label for="email">Email:</label>
+                <input type="text">
+            </form>
+            <button id="rsvp-button">Submit RSVP</button>
+        </div>
+    </div>
+</body>
+</html>
