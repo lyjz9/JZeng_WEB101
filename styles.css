@@ -3,14 +3,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; 
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
   line-height: 1.4;
 }
 
-html {
-  background: url('download.jfif') no-repeat center center fixed; /* Match your image’s dominant color */
+.winky-rough {
+  font-family: "Winky Rough", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
-
 
 body {
     background: url('download.jfif') no-repeat center center fixed;
@@ -18,6 +19,8 @@ body {
     margin: 0;
     min-height: 100vh;
     width:fit-content;
+    font-family: "Winky Rough", serif;
+    color:cadetblue;
   }
 
  li {
@@ -45,7 +48,7 @@ body {
 
 .navbar ul {
     z-index: 1000; /* Ensures the navbar is on top of other elements */
-    background: #a5d4e1; 
+    background: #87b6c5; 
     list-style: none; 
     overflow: hidden;
     position: fixed;
@@ -88,7 +91,60 @@ h1 {
       flex-direction: column;
     }
 
+.event-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px;
+  background: white;
+}
 
+/* Add style to button */
+#theme-button {
+  background-color: #92bfc7;
+  color: white;
+  padding:  5px;
+  font-family:"Winky Rough";
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Default dark mode style */
+.dark-mode {
+  background-image: none;
+  background-color:rgb(50, 84, 97);
+  color: azure;
+}
+
+/* Example: Different dark mode style for h1 */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3 {
+  color:beige;
+}
+
+/* Example: Different dark mode style for visited links */
+.dark-mode input {
+  background-color: #042f5c;
+  color: white;
+  font-family: "Winky Rough";
+  border: 1px solid #666;
+}
+
+/*** RSVP Section ***
+  
+  Purpose:
+  - Add style rules for your website's RSVP form
+
+  When To Modify:
+  - [ ] Project 6 (REQUIRED FEATURE)
+  - [ ] Project 7 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
 .rsvp-container {
   display: flex;
   flex-direction:row;
@@ -131,6 +187,7 @@ input {
   white-space: nowrap;  /* Prevents "Name:" from breaking into 2 lines */
   font-weight: bold;
 }
+
 #rsvp-form input {
   padding: 4px;
   border: 1px solid #ccc;
@@ -154,10 +211,74 @@ input {
   background-color:rgb(71, 205, 231);
 }
 
-.event-card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin: 20px;
-  background: white;
+/* Add other rsvp-related selectors here */
+
+.error {
+  border-style: solid;
+  border-width: 5px;
+  border-color: red;
+  background:lightcoral;
+  /* Set border-color and background */
+}
+
+/*** Success Modal  ***
+  
+  Purpose:
+  - Add style rules to your website's pop-up modal, which appears
+    when a user successfully submits the RSVP form
+
+  When To Modify:
+  - [ ] Project 9 (REQUIRED FEATURE)
+  - [ ] Any time after
+***/
+
+.modal {
+  display: none;   /* modal should be hidden by default*/
+  position: fixed; /* modal cannot move around the screen */
+  z-index: 2;      /* modal appears above other elements */ 
+  
+  /* TODO: Make the modal fill the entire screen */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Add a semi-transparent background to shadow non-modal elements*/
+  background-color: rgba(0,0,0,0.4); /* 40% opacity black */
+
+  /* Flexbox settings for modal */
+  /* These won't apply until we update "display:" from "hidden" to "flex" in our JS */
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+    /* Change modal size and spacing here */
+    padding: 50px;
+    width: 60%;
+
+    /* Customize modal style here */
+    background-color: lightsteelblue;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: "Winky Rough";
+
+    /* Optional: Use flexbox to customize .modal-item layout */
+    display: flex;
+
+}
+
+.modal-item {
+  display: flex;
+    /* Optional: Style individual elements within the modal */
+}
+
+.modal img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain
 }
